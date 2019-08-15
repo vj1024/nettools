@@ -1,7 +1,9 @@
-FROM bash:4.4
-RUN apk add --update \
- netcat-openbsd \
- net-tools \
- curl \
- tcpdump \
- && rm -rf /var/cache/apk/*
+FROM bash:5.0
+RUN apk update && apk add \
+        netcat-openbsd \
+        net-tools \
+        curl \
+        tcpdump \
+        openssh-client \
+        lftp \
+        && rm -rf /var/cache/apk/*
