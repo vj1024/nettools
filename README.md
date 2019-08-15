@@ -8,6 +8,8 @@ common net tools based on bash(alpine).
 * nc
 * curl
 * tcpdump
+* ssh client
+* lftp
 
 # usage
-`docker run -it --rm vj1024/nettools:v1.0`
+`docker run -it --rm vj1024/nettools`
